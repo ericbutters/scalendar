@@ -101,21 +101,21 @@ void addDays(int daysToAdvance, int *resDay, int *resMonth,int day,int month, in
 void setVarFTage(int tagOS, int monatOS)
 {
     int day, month;
-    addDays(-2,&day,&month,tagOS,monatOS,&year);
+    addDays(-2,&day,&month,tagOS,monatOS,year);
     giFTage[Karfreitag][MONAT] = month-1;
     giFTage[Karfreitag][TAG] = day;
     giFTage[Ostersonntag][MONAT] = monatOS-1;
     giFTage[Ostersonntag][TAG] = tagOS;
-    addDays(1,&day,&month,tagOS,monatOS,&year);
+    addDays(1,&day,&month,tagOS,monatOS,year);
     giFTage[Ostermontag][MONAT] = month-1;
     giFTage[Ostermontag][TAG] = day;
-    addDays(39,&day,&month,tagOS,monatOS,&year);
+    addDays(39,&day,&month,tagOS,monatOS,year);
     giFTage[ChrHimmelfahrt][MONAT] = month-1;
     giFTage[ChrHimmelfahrt][TAG] = day;
-    addDays(50,&day,&month,tagOS,monatOS,&year);
+    addDays(50,&day,&month,tagOS,monatOS,year);
     giFTage[Pfingstmontag][MONAT] = month-1;
     giFTage[Pfingstmontag][TAG] = day;
-    addDays(60,&day,&month,tagOS,monatOS,&year);
+    addDays(60,&day,&month,tagOS,monatOS,year);
     giFTage[Fronleichnam][MONAT] = month-1;
     giFTage[Fronleichnam][TAG] = day;
 }
